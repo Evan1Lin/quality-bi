@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #0071e3;
+  --color-background-light: #F5F5F7;
+  --radius-apple: 1rem;
+}
+
+@layer base {
+  body {
+    @apply bg-background-light text-slate-900 font-sans antialiased;
+  }
+}
+
+.apple-card {
+  @apply bg-white/80 backdrop-blur-xl border border-black/5 shadow-sm rounded-apple;
+}
+
+.sidebar-item-active {
+  @apply bg-black/5 text-slate-900 font-medium;
+}
